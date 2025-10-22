@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Websites Collection</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #f5576c;
+            margin-bottom: 40px;
+            font-size: 3rem;
+        }
+        
+        .website-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+        }
+        
+        .website-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #f5576c;
+            transition: transform 0.3s;
+        }
+        
+        .website-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .website-card h2 {
+            color: #f5576c;
+            margin-bottom: 15px;
+        }
+        
+        .website-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .view-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #f093fb, #f5576c);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: transform 0.3s;
+        }
+        
+        .view-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .features {
+            list-style: none;
+            margin: 15px 0;
+        }
+        
+        .features li {
+            padding: 5px 0;
+            color: #555;
+        }
+        
+        .features li::before {
+            content: "✓ ";
+            color: #f5576c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌐 JavaScript Websites Collection</h1>
+        
+        <div class="website-grid">
+            <div class="website-card">
+                <h2>1. Todo List App</h2>
+                <p>Full-featured todo application with local storage, filters, and statistics.</p>
+                <ul class="features">
+                    <li>Add, complete, delete todos</li>
+                    <li>Filter by all/active/completed</li>
+                    <li>Local storage persistence</li>
+                    <li>Real-time statistics</li>
+                    <li>Every line commented</li>
+                </ul>
+                <a href="01-todo-app.html" class="view-btn">View App →</a>
+            </div>
+
+            <div class="website-card">
+                <h2>2. Quiz App</h2>
+                <p>Interactive quiz with progress tracking, score calculation, and instant feedback.</p>
+                <ul class="features">
+                    <li>Multiple choice questions</li>
+                    <li>Progress bar tracking</li>
+                    <li>Instant answer feedback</li>
+                    <li>Score calculation</li>
+                    <li>Fully explained code</li>
+                </ul>
+                <a href="02-quiz-app.html" class="view-btn">View App →</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
